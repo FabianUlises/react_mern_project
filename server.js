@@ -4,8 +4,10 @@ const app = express();
 
 const notFound = require('./middleware/not-found');
 const errorHandlerMiddleware = require('./middleware/error-handler');
-const connectDB = require('./db/connect')
-
+const connectDB = require('./db/connect');
+// Routers
+const authRouter = require('./routers/authRouter');
+const jobsRouter = require('./routers/jobsRouter');
 
 // Function to connect to DB
 const start = async () => {
@@ -27,7 +29,8 @@ start();
 app.get('/', (req, res) => {
     res.send('its ok')
 });
-
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/jobs', jobsRouter);
 // Error handlers
 app.use(notFound)
 app.use(errorHandlerMiddleware)
