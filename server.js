@@ -25,7 +25,6 @@ start();
 
 // Root route
 app.get('/', (req, res) => {
-    throw new Error('error')
     res.send('its ok')
 });
 
