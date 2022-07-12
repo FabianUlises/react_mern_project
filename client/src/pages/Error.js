@@ -1,11 +1,18 @@
+import { Link } from 'react-router-dom';
 import React from 'react'
+import img from '../assets/images/not-found.svg';
+import Wrapper from '../assets/wrappers/ErrorPage';
 
 const Error = () => {
   return (
-    <h1>
-        Error page
-    </h1>
+    <Wrapper className='full-page'>
+      <div>
+        <img src={img} alt="not found" />
+        <h3>oops we can't find the page your looking for</h3>
+        <Link to='/'>back home</Link>
+      </div>
+    </Wrapper>
   )
-}
+};
 
-export default Error
+export default Error;
