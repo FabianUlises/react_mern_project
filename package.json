@@ -1,0 +1,22 @@
+{
+  "name": "jobify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabianUlises/react_mern_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabianUlises/react_mern_project/issues"
+  },
+  "homepage": "https://github.com/FabianUlises/react_mern_project#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
